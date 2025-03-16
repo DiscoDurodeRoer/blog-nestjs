@@ -1,0 +1,137 @@
+[{
+  "_id": {
+    "$oid": "668f07ba86f12d4e30f3b170"
+  },
+  "name": "Ejercicios",
+  "parent": null,
+  "__v": 0,
+  "order": 1
+},
+{
+  "_id": {
+    "$oid": "66b7a64c57426b26404ebb64"
+  },
+  "name": "Tutoriales",
+  "parent": null,
+  "__v": 0,
+  "order": 0
+},
+{
+  "_id": {
+    "$oid": "66b7c8993243ad76ff26d3f4"
+  },
+  "name": "Java",
+  "parent": {
+    "$oid": "66b8ce3cfddcef32a51ee2a1"
+  },
+  "__v": 0,
+  "order": 1
+},
+{
+  "_id": {
+    "$oid": "66b7c8b53243ad76ff26d3fe"
+  },
+  "name": "DAM/DAW",
+  "parent": null,
+  "__v": 0,
+  "order": 2
+},
+{
+  "_id": {
+    "$oid": "66b8777620c0ae14d5a663ac"
+  },
+  "name": "Java FX",
+  "order": 0,
+  "parent": {
+    "$oid": "66b7c8993243ad76ff26d3f4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8ce3cfddcef32a51ee2a1"
+  },
+  "name": "Desktop",
+  "order": 1,
+  "parent": {
+    "$oid": "668f07ba86f12d4e30f3b170"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8ce49fddcef32a51ee2ad"
+  },
+  "name": "Web",
+  "order": 2,
+  "parent": {
+    "$oid": "668f07ba86f12d4e30f3b170"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8ce9795f95106b380c4a6"
+  },
+  "name": "HTML",
+  "order": 1,
+  "parent": {
+    "$oid": "66b8ce49fddcef32a51ee2ad"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8cea995f95106b380c4b3"
+  },
+  "name": "Angular",
+  "order": 0,
+  "parent": {
+    "$oid": "66b8ce49fddcef32a51ee2ad"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8cee095f95106b380c4d3"
+  },
+  "name": "Base de datos",
+  "order": 0,
+  "parent": {
+    "$oid": "668f07ba86f12d4e30f3b170"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8cf9995f95106b380c55a"
+  },
+  "name": "C#",
+  "order": 0,
+  "parent": {
+    "$oid": "66b8ce3cfddcef32a51ee2a1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8cfe195f95106b380c585"
+  },
+  "name": "JavaScript",
+  "order": 0,
+  "parent": {
+    "$oid": "66b8ce49fddcef32a51ee2ad"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b8cff995f95106b380c595"
+  },
+  "name": "PHP",
+  "order": 0,
+  "parent": {
+    "$oid": "66b8ce49fddcef32a51ee2ad"
+  },
+  "__v": 0
+}]

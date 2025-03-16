@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "0b1046ca-0037-4cad-b04d-2eac0888b0e6",
+		"name": "categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19006206"
+	},
+	"item": [
+		{
+			"name": "getCategories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRkckBnbWFpbC5jb20iLCJpYXQiOjE3MjAwNDc1MTQsImV4cCI6MTcyMDMwNjcxNH0.G3NwPmOQcK9iqRLlOIsm4OUyOiLQNiGdh5bqabw1Ix8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "AUTH=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRkckBnbWFpbC5jb20iLCJpYXQiOjE3MjAwNDcwMDEsImV4cCI6MTcyMDMwNjIwMX0.tY1uxHVDr7lm4hJqgoXCb8WrIKxsqKNwG-Ozl9Nd7JE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{server}}/categories",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCategories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRkckBnbWFpbC5jb20iLCJpYXQiOjE3MjAwNDc1MTQsImV4cCI6MTcyMDMwNjcxNH0.G3NwPmOQcK9iqRLlOIsm4OUyOiLQNiGdh5bqabw1Ix8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "AUTH=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRkckBnbWFpbC5jb20iLCJpYXQiOjE3MjAwNDcwMDEsImV4cCI6MTcyMDMwNjIwMX0.tY1uxHVDr7lm4hJqgoXCb8WrIKxsqKNwG-Ozl9Nd7JE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{server}}/categories/all",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"categories",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCategoriesPublic",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "AUTH=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRkckBnbWFpbC5jb20iLCJpYXQiOjE3MjAwNDcwMDEsImV4cCI6MTcyMDMwNjIwMX0.tY1uxHVDr7lm4hJqgoXCb8WrIKxsqKNwG-Ozl9Nd7JE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{server}}/categories/public",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"categories",
+						"public"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Java FX 2\",\r\n    \"parent\": {\r\n        \"name\": \"Java FX\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/categories",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/categories/66856e8a416d109cd4475dee",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"categories",
+						"66856e8a416d109cd4475dee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ejercicios\",\r\n    \"description\": \"Ejercicios\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/categories/668f07ba86f12d4e30f3b170",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"categories",
+						"668f07ba86f12d4e30f3b170"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
